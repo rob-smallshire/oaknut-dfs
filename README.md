@@ -1,5 +1,28 @@
 # oaknut-dfs
 
+> [!IMPORTANT]
+> **This repository has moved.** Development of `oaknut-dfs` now happens in the
+> unified [`oaknut` monorepo](https://github.com/rob-smallshire/oaknut), alongside
+> `oaknut-file`, `oaknut-zip`, and the forthcoming family members.
+>
+> **For users:** nothing changes at install time — `pip install oaknut-dfs` still
+> works and pulls from PyPI as before. Starting with **version 4.0.0**, however, the
+> Python import path changes from `oaknut_dfs` to `oaknut.dfs` so it can contribute
+> to the shared `oaknut.*` namespace. Update your code:
+>
+> ```python
+> # Before
+> from oaknut_dfs import DFS, DFSPath, ADFS, ADFSPath
+>
+> # After
+> from oaknut.dfs import DFS, DFSPath, ADFS, ADFSPath
+> ```
+>
+> **For contributors:** please file issues and pull requests against the monorepo at
+> <https://github.com/rob-smallshire/oaknut>. This repository is archived read-only;
+> the full git history (including per-file `git blame`) is preserved under
+> `packages/oaknut-dfs/` in the monorepo.
+
 [![PyPI version](https://img.shields.io/pypi/v/oaknut-dfs.svg)](https://pypi.org/project/oaknut-dfs/)
 [![CI](https://github.com/rob-smallshire/oaknut-dfs/actions/workflows/tests.yml/badge.svg)](https://github.com/rob-smallshire/oaknut-dfs/actions/workflows/tests.yml)
 [![Python versions](https://img.shields.io/pypi/pyversions/oaknut-dfs.svg)](https://pypi.org/project/oaknut-dfs/)
